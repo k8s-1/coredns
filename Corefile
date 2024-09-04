@@ -5,7 +5,7 @@
 }
 
 example.com:53 {
-    file /etc/example.db
+    file /etc/coredns/example.db
     log
     errors
 }
