@@ -4,8 +4,8 @@ services:
     container_name: coredns
     restart: always
     volumes:
-      - ./Corefile:/tmp/Corefile
-      - ./example.db:/tmp/example.db
+      - ./Corefile:/etc/Corefile
+      - ./example.db:/etc/example.db
     ports:
       - "53:53/udp"
-    command: -conf /tmp/Corefile
+    command: -conf /etc/Corefile

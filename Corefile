@@ -5,7 +5,7 @@
 }
 
 example.com:53 {
-    file /root/example.db
+    file /etc/example.db
     log
     errors
 }
