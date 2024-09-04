@@ -4,5 +4,6 @@
 docker-compose up -d
 
 # query our server from a client in the same subnet or from the server directly
-LOCAL_IP=$(hostname -i | cut -d' ' -f1)
-dig @"$LOCAL_IP" host.example.com
+# docker by default uses bridge networking - a private virtual network @172.*.*.* on the docker host
+DNS_SERVER_IP=$(docker inspect coredns | jq -r '.[0].NetworkSettings.Networks.coredns_default.IPAddress')
+dig @"$DNS_SERVER_IP" host.example.com
