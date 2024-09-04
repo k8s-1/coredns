@@ -1,5 +1,5 @@
-example.com.          IN  SOA dns.example.com. johndoe.example.com. 2024090418 7200 3600 1209600 3600
-gateway.example.com.  IN  A   192.168.1.1
+example.com.          IN  SOA dns.example.com. johndoe.example.com. 2024090418 7200 3600 1209600 3600 # State of Authority record
+gateway.example.com.  IN  A   192.168.1.1 # A record -> translates to ipv4
 dns.example.com.      IN  A   192.168.1.2
 host.example.com.     IN  A   192.168.1.3
-server.example.com.   IN  CNAME   dns
+server.example.com.   IN  CNAME   dns # will form dns.example.com -> value + SOA, which will result in dns.example.com resolved
