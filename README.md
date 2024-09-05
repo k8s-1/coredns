@@ -1,4 +1,4 @@
-# coredns
+# coredns example
 
 https://coredns.io/
 
