@@ -1,4 +1,4 @@
-example.com.          IN  SOA dns.example.com. admin.email.com. ( ; SOA record - State of Authority
+example.com.          IN  SOA dns.example.com. admin.email.com. ( ; SOA record - Start of Authority
   2024090416 ; arbitrary serial number, valid date according to last modified 2024-09-04 @ 16:00
   7200       ; refresh rate for client to retrieve an SOA in seconds
   3600       ; retry rate in seconds after a failed refresh
