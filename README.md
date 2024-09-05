@@ -1,0 +1,6 @@
+# coredns
+
+## Install
+```
+./run.sh
+```
