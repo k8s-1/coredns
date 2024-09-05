@@ -1,8 +1,16 @@
+# DNS zone 1
+# forward everything on port 53 to Google DNS server
+
 .:53 {
     forward . 8.8.8.8 9.9.9.9
     log
     errors
 }
+
+
+
+# DNS zone 2
+# forward any DNS queries for example.com domain to a local DNS record database
 
 example.com:53 {
     file /etc/coredns/example.db
